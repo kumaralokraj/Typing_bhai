@@ -11,6 +11,7 @@ const app = express();
 
 const allowedOrigins = [
   "http://localhost:5173",
+  "https://typingbhai.codingbhai.online",
   process.env.CLIENT_URL?.trim().replace(/\/+$/, ""),
 ].filter(Boolean);
 
