@@ -17,6 +17,12 @@ function Results() {
   if (!result) {
     return (
       <main className="flex min-h-[75vh] flex-col items-center justify-center gap-5 bg-slate-950 px-5 text-white">
+        <SEO
+  title="Your Typing Test Results | TypingBhai"
+  description="Review your typing speed, accuracy, and typing test performance."
+  path="/results"
+  noindex
+/>
         <h1 className="text-2xl font-bold">
           No result available
         </h1>

@@ -41,6 +41,7 @@ function TypingText({ text = "", input = "" }) {
       }}
       aria-label="Text to type"
     >
+      
       <div className="flex flex-wrap content-start">
         {words.map((part, partIndex) => {
           const startIndex = globalIndex;

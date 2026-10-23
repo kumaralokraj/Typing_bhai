@@ -163,6 +163,11 @@ function TypingTest() {
 
   return (
     <main className="min-h-[80vh] bg-slate-950 px-5 py-10 text-white">
+        <SEO
+  title="Online Typing Test – 15, 30, 60 Seconds | TypingBhai"
+  description="Practice typing with easy, medium, and hard words. Take timed typing tests and measure your WPM and accuracy."
+  path="/typing"
+/>
       <div className="mx-auto max-w-6xl">
         {/* Heading */}
         <div className="mb-12 flex items-center justify-center gap-3">
