@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Keyboard, RefreshCw } from "lucide-react";
+import SEO from "../components/SEO";
 
 import TestControls from "../components/typing/TestControls";
 import TypingBox from "../components/typing/TypingBox";
