@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #020617;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: #0891b2;
+  color: white;
+}
+/* Monkeytype-inspired typing experience */
+
+.typing-words {
+  font-family:
+    "Roboto Mono",
+    "Courier New",
+    monospace;
+
+  scrollbar-width: none;
+  overflow-wrap: normal;
+}
+
+.typing-words::-webkit-scrollbar {
+  display: none;
+}
+
+.typing-caret {
+  pointer-events: none;
+  animation: caret-blink 1s step-end infinite;
+  transition:
+    left 0.08s ease,
+    top 0.08s ease;
+}
+
+@keyframes caret-blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .typing-caret {
+    animation: none;
+    transition: none;
+  }
+
+  .typing-words {
+    scroll-behavior: auto;
+  }
+}
+.typing-words {
+  scrollbar-width: none;
+  font-variant-ligatures: none;
+}
+
+.typing-words::-webkit-scrollbar {
+  display: none;
+}
+
+.typing-caret {
+  pointer-events: none;
+  animation: typing-caret-blink 1s step-end infinite;
+}
+
+@keyframes typing-caret-blink {
+  0%, 49% {
+    opacity: 1;
+  }
+
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .typing-caret {
+    animation: none;
+  }
+}
